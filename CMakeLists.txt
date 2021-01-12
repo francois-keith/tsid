@@ -166,8 +166,8 @@ FILE(GLOB ${PYWRAP}_HEADERS
   )
 
 SET(${PROJECT_NAME}_HEADERS
-  include/tsid/config.hpp
-  include/tsid/deprecation.hpp
+  ${CMAKE_BINARY_DIR}/include/tsid/config.hh
+  ${CMAKE_BINARY_DIR}/include/tsid/deprecated.hh
   include/tsid/utils/statistics.hpp
   include/tsid/utils/stop-watch.hpp
   include/tsid/utils/Stdafx.hh
