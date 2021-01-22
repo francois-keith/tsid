@@ -32,7 +32,7 @@ namespace tsid
      * @brief
      */
     template<int nVars, int nEqCon, int nIneqCon>
-    class TSID_DLLAPI SolverHQuadProgRT : public SolverHQPBase
+    class TSID_DLLEXPORT SolverHQuadProgRT : public SolverHQPBase
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW
