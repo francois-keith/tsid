@@ -28,7 +28,7 @@ namespace tsid
 {
   namespace contacts
   {
-    class Contact6d : public ContactBase
+    class TSID_DLLAPI Contact6d : public ContactBase
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

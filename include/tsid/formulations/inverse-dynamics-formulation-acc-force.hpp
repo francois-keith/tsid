@@ -64,7 +64,7 @@ namespace tsid
     std::shared_ptr<ContactLevel> contactLevel;
   };
 
-  class InverseDynamicsFormulationAccForce:
+  class TSID_DLLAPI InverseDynamicsFormulationAccForce:
       public InverseDynamicsFormulationBase
   {
   public:

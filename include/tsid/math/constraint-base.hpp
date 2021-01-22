@@ -18,6 +18,7 @@
 #ifndef __invdyn_math_constraint_base_hpp__
 #define __invdyn_math_constraint_base_hpp__
 
+#include "tsid/config.hh"
 #include "tsid/math/fwd.hpp"
 #include <string>
 
@@ -33,7 +34,7 @@ namespace tsid
      * lb and ub: lb <= A*x <= ub
      * Bounds are represented by two vectors lb and ub: lb <= x <= ub
      */
-    class ConstraintBase
+    class TSID_DLLAPI ConstraintBase
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

@@ -27,7 +27,7 @@ namespace tsid
   namespace tasks
   {
 
-    class TaskActuationBounds : public TaskActuation
+    class TSID_DLLAPI TaskActuationBounds : public TaskActuation
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

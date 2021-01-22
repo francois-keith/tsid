@@ -27,7 +27,7 @@ namespace tsid
     /**
      * @brief Abstract interface for a Quadratic Program (HQP) solver.
      */
-    class TSID_DLLAPI SolverHQuadProg:
+    class SolverHQuadProg:
         public SolverHQPBase
     {
     public:

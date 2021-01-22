@@ -27,7 +27,7 @@ namespace tsid
   namespace trajectories
   {
 
-    class TrajectorySE3Constant : public TrajectoryBase
+    class TSID_DLLAPI TrajectorySE3Constant : public TrajectoryBase
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

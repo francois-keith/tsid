@@ -18,6 +18,7 @@
 #ifndef __invdyn_solvers_hqp_factory_hpp__
 #define __invdyn_solvers_hqp_factory_hpp__
 
+#include <tsid/config.hh>
 #include <tsid/solvers/solver-HQP-base.hpp>
 #include <tsid/solvers/solver-HQP-eiquadprog-rt.hpp>
 
@@ -38,7 +39,7 @@ namespace tsid
        *
        * @return A pointer to the new solver.
        */
-      static SolverHQPBase * createNewSolver(const SolverHQP solverType,
+      static TSID_DLLAPI SolverHQPBase * createNewSolver(const SolverHQP solverType,
                                                const std::string & name);
       
       /**

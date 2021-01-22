@@ -28,7 +28,7 @@ namespace tsid
   namespace solvers
   {
     
-    std::string HQPDataToString(const HQPData & data, bool printMatrices=false);
+    std::string TSID_DLLAPI HQPDataToString(const HQPData & data, bool printMatrices=false);
   }
   
 }

@@ -24,7 +24,7 @@ namespace tsid
 {
   namespace tasks
   {
-    class TaskActuation : public TaskBase
+    class TSID_DLLAPI TaskActuation : public TaskBase
     {
     public:
 

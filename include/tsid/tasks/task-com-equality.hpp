@@ -28,7 +28,7 @@ namespace tsid
   namespace tasks
   {
 
-    class TaskComEquality : public TaskMotion
+    class TSID_DLLAPI TaskComEquality : public TaskMotion
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

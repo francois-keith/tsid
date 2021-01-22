@@ -25,7 +25,7 @@ namespace tsid
   namespace trajectories
   {
 
-    class TrajectoryEuclidianConstant : public TrajectoryBase
+    class TSID_DLLAPI TrajectoryEuclidianConstant : public TrajectoryBase
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

@@ -28,7 +28,7 @@ namespace tsid
     /**
      * @brief
      */
-    class TSID_DLLAPI SolverHQuadProgFast : public SolverHQPBase
+    class SolverHQuadProgFast : public SolverHQPBase
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

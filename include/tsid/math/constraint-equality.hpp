@@ -25,7 +25,7 @@ namespace tsid
   namespace math
   {
 
-    class ConstraintEquality : public ConstraintBase
+    class TSID_DLLAPI ConstraintEquality : public ConstraintBase
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

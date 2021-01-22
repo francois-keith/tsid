@@ -24,7 +24,7 @@ namespace tsid
 {
   namespace tasks
   {
-    class TaskContactForce : public TaskBase
+    class TSID_DLLAPI TaskContactForce : public TaskBase
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

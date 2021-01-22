@@ -31,7 +31,7 @@ namespace tsid
     ///
     /// \brief Base template of a Contact.
     ///
-    class ContactBase
+    class TSID_DLLAPI ContactBase
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

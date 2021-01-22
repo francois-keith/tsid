@@ -27,7 +27,7 @@ namespace tsid
   namespace tasks
   {
 
-    class TaskJointPosture : public TaskMotion
+    class TSID_DLLAPI TaskJointPosture : public TaskMotion
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

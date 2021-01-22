@@ -28,6 +28,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef __invdyn_stopwatch_H__
 #define __invdyn_stopwatch_H__
 
+#include "tsid/config.hh"
 #include "tsid/utils/Stdafx.hh"
 
 #ifndef WIN32
@@ -152,7 +153,7 @@ enum StopwatchMode
     parameter.
 
 */
-class Stopwatch {
+class TSID_DLLAPI Stopwatch {
 public:
 
   /** Constructor */
@@ -267,7 +268,7 @@ protected:
 
 };
 
-Stopwatch& getProfiler();
+TSID_DLLAPI Stopwatch& getProfiler();
 
 #ifndef WIN32
 #pragma GCC visibility pop

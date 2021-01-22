@@ -22,6 +22,7 @@
 #include <iostream>
 #include <map>
 #include <sstream>
+#include <tsid/config.hh>
 
 #define STATISTICS_MAX_NAME_LENGTH 60
 
@@ -66,7 +67,7 @@ public:
     parameter.
 
 */
-class Statistics {
+class TSID_DLLAPI Statistics {
 public:
 
   /** Constructor */
@@ -154,6 +155,6 @@ protected:
 
 };
 
-Statistics& getStatistics();
+TSID_DLLAPI Statistics& getStatistics();
 
 #endif

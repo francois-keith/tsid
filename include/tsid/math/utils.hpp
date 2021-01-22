@@ -18,6 +18,7 @@
 #ifndef __invdyn_math_utils_hpp__
 #define __invdyn_math_utils_hpp__
 
+#include "tsid/config.hh"
 #include "tsid/math/fwd.hpp"
 
 #include <pinocchio/spatial/se3.hpp>
@@ -81,38 +82,38 @@ namespace tsid
     /**
      * Convert the input SE3 object to a 7D vector of floats [X,Y,Z,Q1,Q2,Q3,Q4].
      */
-    void SE3ToXYZQUAT(const pinocchio::SE3 & M, RefVector xyzQuat);
+    void TSID_DLLAPI SE3ToXYZQUAT(const pinocchio::SE3 & M, RefVector xyzQuat);
 
     /**
      * Convert the input SE3 object to a 12D vector of floats [X,Y,Z,R11,R12,R13,R14,...].
      */
-    void SE3ToVector(const pinocchio::SE3 & M, RefVector vec);
+    void TSID_DLLAPI SE3ToVector(const pinocchio::SE3 & M, RefVector vec);
 
-    void vectorToSE3(RefVector vec, pinocchio::SE3 & M);
+    void TSID_DLLAPI vectorToSE3(RefVector vec, pinocchio::SE3 & M);
 
-    void errorInSE3 (const pinocchio::SE3 & M,
+    void TSID_DLLAPI errorInSE3 (const pinocchio::SE3 & M,
                      const pinocchio::SE3 & Mdes,
                      pinocchio::Motion & error);
 
-    void solveWithDampingFromSvd(Eigen::JacobiSVD<Eigen::MatrixXd> & svd,
+    void TSID_DLLAPI solveWithDampingFromSvd(Eigen::JacobiSVD<Eigen::MatrixXd> & svd,
                              ConstRefVector b,
                              RefVector sol, double damping=0.0);
 
-    void svdSolveWithDamping(ConstRefMatrix A, ConstRefVector b,
+    void TSID_DLLAPI svdSolveWithDamping(ConstRefMatrix A, ConstRefVector b,
                              RefVector sol, double damping=0.0);
 
-    void pseudoInverse(ConstRefMatrix A,
+    void TSID_DLLAPI pseudoInverse(ConstRefMatrix A,
                        RefMatrix Apinv,
                        double tolerance,
                        unsigned int computationOptions = Eigen::ComputeThinU | Eigen::ComputeThinV);
 
-    void pseudoInverse(ConstRefMatrix A,
+    void TSID_DLLAPI pseudoInverse(ConstRefMatrix A,
                        Eigen::JacobiSVD<Eigen::MatrixXd>& svdDecomposition,
                        RefMatrix Apinv,
                        double tolerance,
                        unsigned int computationOptions);
 
-    void pseudoInverse(ConstRefMatrix A,
+    void TSID_DLLAPI pseudoInverse(ConstRefMatrix A,
                        Eigen::JacobiSVD<Eigen::MatrixXd>& svdDecomposition,
                        RefMatrix Apinv,
                        double tolerance,
@@ -121,7 +122,7 @@ namespace tsid
                        int &nullSpaceCols,
                        unsigned int computationOptions);
 
-    void dampedPseudoInverse(ConstRefMatrix A,
+    void TSID_DLLAPI dampedPseudoInverse(ConstRefMatrix A,
                              Eigen::JacobiSVD<Eigen::MatrixXd>& svdDecomposition,
                              RefMatrix Apinv,
                              double tolerance,
@@ -130,12 +131,12 @@ namespace tsid
                              double * nullSpaceBasisOfA=0,
                              int *nullSpaceRows=0, int *nullSpaceCols=0);
 
-    void nullSpaceBasisFromDecomposition(const Eigen::JacobiSVD<Eigen::MatrixXd> & svdDecomposition,
+    void TSID_DLLAPI nullSpaceBasisFromDecomposition(const Eigen::JacobiSVD<Eigen::MatrixXd> & svdDecomposition,
                                          double tolerance,
                                          double * nullSpaceBasisMatrix,
                                          int &rows, int &cols);
     
-    void nullSpaceBasisFromDecomposition(const Eigen::JacobiSVD<Eigen::MatrixXd> & svdDecomposition,
+    void TSID_DLLAPI nullSpaceBasisFromDecomposition(const Eigen::JacobiSVD<Eigen::MatrixXd> & svdDecomposition,
                                          int rank,
                                          double * nullSpaceBasisMatrix,
                                          int &rows, int &cols);

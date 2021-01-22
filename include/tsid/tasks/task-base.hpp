@@ -33,7 +33,7 @@ namespace tsid
     /// \brief Base template of a Task.
     /// Each class is defined according to a constant model of a robot.
     ///
-    class TaskBase
+    class TSID_DLLAPI TaskBase
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

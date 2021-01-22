@@ -34,7 +34,7 @@ namespace tsid
   namespace tasks
   {
 
-    class TaskJointPosVelAccBounds : public TaskMotion
+    class TSID_DLLAPI TaskJointPosVelAccBounds : public TaskMotion
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

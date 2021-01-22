@@ -18,6 +18,7 @@
 #ifndef __invdyn_trajectory_base_hpp__
 #define __invdyn_trajectory_base_hpp__
 
+#include "tsid/config.hh"
 #include "tsid/math/fwd.hpp"
 
 #include <string>
@@ -58,7 +59,7 @@ namespace tsid
     };
 
 
-    class TrajectoryBase
+    class TSID_DLLAPI TrajectoryBase
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

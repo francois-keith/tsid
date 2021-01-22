@@ -35,7 +35,7 @@ namespace tsid
   ///
   /// \brief Wrapper for a robot based on pinocchio
   ///
-  class InverseDynamicsFormulationBase
+  class TSID_DLLAPI InverseDynamicsFormulationBase
   {
   public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW

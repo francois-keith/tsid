@@ -18,6 +18,7 @@
 #ifndef __invdyn_robot_wrapper_hpp__
 #define __invdyn_robot_wrapper_hpp__
 
+#include "tsid/config.hh"
 #include "tsid/math/fwd.hpp"
 #include "tsid/robots/fwd.hpp"
 
@@ -36,7 +37,7 @@ namespace tsid
     ///
     /// \brief Wrapper for a robot based on pinocchio
     ///
-    class RobotWrapper
+    class TSID_DLLAPI RobotWrapper
     {
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW
